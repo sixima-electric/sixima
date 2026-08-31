@@ -160,7 +160,7 @@ npm run dev
 
 SIXIMA は現在 Phase 0 の実験段階にあり、ソフトウェアエンジニア、デザイナー、アクセシビリティ研究者、AI開発者の皆様からのフィードバックとコントリビューションを歓迎しています。
 
-* **GitHub Issues:** [github.com/sixima/sixima/issues](https://www.google.com/search?q=https://github.com/sixima/sixima/issues)
+* **GitHub Issues:** [github.com/sixima-electric/sixima/issues](https://www.google.com/search?q=https://github.com/sixima/sixima/issues)
 * **Email:** [sixima@proton.me](https://www.google.com/search?q=mailto%3Asixima%40proton.me)
 * **Origin:** 北陸先端科学技術大学院大学（JAIST）, 石川県能美市
 
