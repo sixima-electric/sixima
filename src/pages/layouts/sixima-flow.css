@@ -1,0 +1,161 @@
+/* ==========================================================================
+   SIXIMA REACT FLOW THEME & MODAL SPECIFICATION (sixima-flow.css)
+   ========================================================================== */
+@import "@xyflow/react/dist/style.css";
+
+.flow-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.flow-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+    background: var(--surface-color);
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: border-color 0.15s ease;
+}
+
+.flow-card:hover {
+    border-color: var(--accent-color);
+}
+
+.flow-card-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+}
+
+.flow-viewport {
+    width: 100%;
+    height: 280px;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    pointer-events: none; /* 一覧表示時はクリックイベントをカード全体へ通す */
+}
+
+/* ターミナルカスタムノード */
+.react-flow__node {
+    border-radius: 0 !important;
+    font-family: var(--font-main) !important;
+    font-size: 0.8rem !important;
+    letter-spacing: 0.04em !important;
+    padding: 8px 12px !important;
+    box-shadow: none !important;
+}
+
+.terminal-node {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-bright);
+}
+
+.terminal-node.accent {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.terminal-node.dim {
+    border-color: var(--border-color);
+    color: var(--text-muted);
+}
+
+/* ハンドル（接続点） */
+.react-flow__handle {
+    width: 6px !important;
+    height: 6px !important;
+    background: var(--border-color) !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.react-flow__handle-right {
+    right: -4px !important;
+}
+
+.react-flow__handle-left {
+    left: -4px !important;
+}
+
+/* エッジ（結線） */
+.react-flow__edge-path {
+    stroke: var(--text-muted) !important;
+    stroke-width: 1.5px !important;
+}
+
+.react-flow__edge.accent .react-flow__edge-path {
+    stroke: var(--accent-color) !important;
+}
+
+.react-flow__attribution {
+    display: none !important;
+}
+
+/* ==========================================================================
+   TERMINAL INSPECTOR MODAL (EXPANDED VIEW)
+   ========================================================================== */
+
+.flow-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(11, 15, 12, 0.88);
+    backdrop-filter: blur(4px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.flow-modal-container {
+    width: min(1200px, 100%);
+    height: min(85vh, 800px);
+    background: var(--surface-color);
+    border: 1px solid var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.flow-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.flow-modal-close {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-bright);
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-family: var(--font-main);
+}
+
+.flow-modal-close:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.flow-modal-viewport {
+    flex: 1;
+    width: 100%;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+}
