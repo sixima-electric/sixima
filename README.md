@@ -1,11 +1,10 @@
 # SIXIMA
-<img width="943" height="614" alt="image" src="https://github.com/user-attachments/assets/b380bcbe-1fa8-4dfe-ae52-517b0519dd37" />
-
-# SIXIMA
 
 > **Dual-Paradigm Interface Architecture: Universal Accessibility × Autonomous AI Synchronization.**
+> *🌐 [日本語のREADME (README-jp.md) はこちら](README-jp.md)*
+<img width="943" height="614" alt="image" src="https://github.com/user-attachments/assets/b380bcbe-1fa8-4dfe-ae52-517b0519dd37" />
 
-*🌐 [日本語のREADME (README-jp.md) はこちら](README-jp.md)*
+
 
 [![Status: Phase 0 Active](https://img.shields.io/badge/status-phase_0_active-00ff66?style=flat-square&logo=github)](https://github.com/sixima/sixima)
 [![Origin: JAIST](https://img.shields.io/badge/origin-JAIST-black?style=flat-square)](https://www.jaist.ac.jp/)
