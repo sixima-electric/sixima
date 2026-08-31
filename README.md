@@ -2,8 +2,6 @@
 
 > **Dual-Paradigm Interface Architecture: Universal Accessibility × Autonomous AI Synchronization.**
 > *🌐 [日本語のREADME (README-jp.md) はこちら](README-jp.md)*
-<img width="943" height="614" alt="image" src="https://github.com/user-attachments/assets/b380bcbe-1fa8-4dfe-ae52-517b0519dd37" />
-
 
 
 [![Status: Phase 0 Active](https://img.shields.io/badge/status-phase_0_active-00ff66?style=flat-square&logo=github)](https://github.com/sixima/sixima)
@@ -170,6 +168,27 @@ SIXIMA is currently in its Phase 0 experimental stage. We actively welcome feedb
 
 ---
 
-## 08 / License
+## 08 / The Origin of "SIXIMA" & Our Mission
+
+The name **SIXIMA** originates from **"Shikishima"**, an ancient poetic name for Japan. Meaning "the spread-out islands" or "expansive foundation," it perfectly encapsulates our ultimate mission:
+
+> **"To lay down a universal digital foundation where absolutely no one is left behind."**
+
+While the modern web has grown visually rich, the practice of forcing a single graphical interface (GUI) onto everyone has inadvertently left behind countless individuals with varying visual, physical, and cognitive traits. The era of forcing humans to adapt to the rigid constraints of software must end.
+
+We are building a robust, universal foundation—a digital ground truth—that bridges all divides. It ensures that every single person can access the digital world in the form most optimal for them, whether that be a rich graphical interface, pure text, synthesized voice, or tactile Braille.
+
+Simultaneously, the six letters (S-I-X-I-M-A) encode the technical thesis of our architecture:
+
+* **S**emantic
+* **I**nterface
+* **X** [ Cross-modal / Crossing Boundaries ]
+* **I**ntelligent
+* **M**achine
+* **A**daptation
+
+Just as the ancient "Shikishima" represents a solid, expansive earth, SIXIMA provides an unwavering structural truth (HTML/CSS). Yet, through the crossing (X) with Intelligent Machines, it dynamically Adapts to ensure no user is ever left behind.
+
+## 09 / License
 
 This project is licensed under the [MIT License](https://www.google.com/search?q=LICENSE).
