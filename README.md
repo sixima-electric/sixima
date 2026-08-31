@@ -1,8 +1,11 @@
 # SIXIMA
 <img width="943" height="614" alt="image" src="https://github.com/user-attachments/assets/b380bcbe-1fa8-4dfe-ae52-517b0519dd37" />
 
+# SIXIMA
 
-> **Dual-Paradigm Interface Architecture: Universal Human Accessibility × Autonomous Agent Synchronization.**
+> **Dual-Paradigm Interface Architecture: Universal Accessibility × Autonomous AI Synchronization.**
+
+*🌐 [日本語のREADME (README-jp.md) はこちら](README-jp.md)*
 
 [![Status: Phase 0 Active](https://img.shields.io/badge/status-phase_0_active-00ff66?style=flat-square&logo=github)](https://github.com/sixima/sixima)
 [![Origin: JAIST](https://img.shields.io/badge/origin-JAIST-black?style=flat-square)](https://www.jaist.ac.jp/)
@@ -11,227 +14,163 @@
 
 ---
 
-## 01 / Manifest: The Dual-Paradigm Imperative
+## 01 / Vision: The Future of Interfaces We Envision
 
-Established at the **Japan Advanced Institute of Science and Technology (JAIST)**, **SIXIMA** is an open-source interface collective and systems research initiative. We operate under a pragmatic thesis:
+Originated at the **Japan Advanced Institute of Science and Technology (JAIST)**, **SIXIMA** is an open-source UI/UX research project. The future we are building is one where **a single website dynamically and in real-time transforms into entirely different, optimal forms depending on who is viewing it.**
 
-> **We do not reject the Graphical User Interface (GUI). Visual computing remains one of humanity's greatest cognitive amplifiers. However, no single, static GUI can ever be optimal for all human beings.**
+Imagine accessing the same system, but:
+* **User A**, who excels in visual processing, sees a rich, graphical interface (GUI).
+* **User B**, who experiences cognitive fatigue from information overload, sees a noise-free, highly focused plain text interface (CUI).
+* **User C**, who relies on non-visual navigation, receives a perfectly structured audio or refreshable Braille stream.
 
-### From Static Universal Design to Individualized Optimization via AI
-For decades, interface design has pursued "Universal Design"—attempting to craft a single, compromise-laden graphical layout that serves everyone. In practice, this forced compromise results in interfaces bloated with visual noise, non-semantic wrappers, and rigid interaction assumptions that create severe friction for individuals with sensory, motor, or cognitive differences.
-
-With the advent of autonomous AI and multi-modal synthesis, **we no longer need to force every human into the same visual mold:**
-* **For those who excel with visual cognition:** High-density, rich graphical projections and charts.
-* **For those who require minimal cognitive fatigue or linear focus:** High-contrast, deterministic text-first interfaces.
-* **For non-visual or tactile navigation:** Direct auditory synthesis and refreshable Braille streams.
-
-SIXIMA is an experimental initiative, but its purpose is concrete: to demonstrate a realistic path forward where software dynamically conforms to the human, rather than forcing the human to conform to the software.
+Instead of developers manually building these variations, **an AI acts as the intermediary to automatically translate and project them.** This is our vision of the **"Dual-Paradigm"** architecture.
 
 ---
 
-### The Realistic Foundations: Preserving Design Intent via HTML + CSS
+## 02 / Why It's Necessary: The Limits of the "One-Size-Fits-All" Screen
 
-1. **HTML + CSS Encodes Design Intent (Beyond Raw JSON):**  
-   If the goal were merely to pass raw data to an AI, JSON would suffice. However, pure data models completely strip away the author's **Design Intent**—such as visual hierarchy, emphasis, spatial grouping, relational weight, and emotional tone. When an AI attempts to reconstruct an interface from bare JSON, it is forced to speculate on what mattered most, introducing a massive vector for **hallucination and communication breakdown**.  
-   * **HTML** conveys structured relational semantics (`<main>`, `<section>`, `<mark>`, `<table>`, `<aside>`).  
-   * **CSS** conveys the author's graphical design intent (visual weight, hierarchy, spatial proximity, contrast, and cognitive focus).  
-   Standard HTML/CSS possesses sufficient structural redundancy to reconstruct any UI/UX modality (rich GUI, terminal CUI, audio tree, or Braille stream) with zero ambiguity and minimal misinterpretation.
+We do not reject the Graphical User Interface (GUI). Visual computing is a brilliant invention that expands human cognition. 
 
-2. **Zero Redundant Schemas (Developer Sovereignty):**  
-   Developers do not need to maintain separate, fragile JSON API schemas or custom serialization formats alongside their presentation code. Standard, semantic web markup serves simultaneously as the live visual interface and the machine-readable ground truth, drastically reducing maintenance overhead.
+However, the traditional goal of web design—"Universal Design" (attempting to satisfy everyone's needs with a single screen layout)—has reached its limits. 
 
-3. **Zero Browser Engine Modifications:**  
-   SIXIMA requires zero proprietary browser forks, experimental builds, or custom WebAssembly runtimes. It is engineered to run **100% natively on standard, unmodified browser engines (Chromium, WebKit, Gecko)** using production web standards today.
+Vision, motor skills, and cognitive traits vary wildly from person to person. Forcing a single screen on everyone inevitably leads to endless compromises, resulting in bloated interfaces that create friction, sensory overload, and "hard-to-use" experiences for many.
 
-4. **Accessibility as Built-in Architecture:**  
-   Accessibility is not an afterthought or an ARIA patch applied at the end of a sprint. In SIXIMA, flat DOM hierarchies, phosphor-grade luminance contrast, predictable keyboard focus loops, and deterministic state transitions are foundational architectural constraints present from day zero.
+With the advent of autonomous AI, **we no longer need to force everyone into the same visual mold. Humans shouldn't have to adapt to the software's screen; the software should adapt to the human.**
 
 ---
 
-## 02 / The Dual-Paradigm Architecture
+## 03 / How to Build It: Redefining HTML/CSS
 
-SIXIMA fundamentally decouples **semantic ground truth** from **ephemeral projection**. A clean, deterministic markup base serves as the unambiguous input for real-time individualized interface synthesis:
+To realize this vision, we need a foundational layer that AI can read perfectly, without any misinterpretation. 
+
+You might think passing pure data via a format like JSON would be sufficient. However, we intentionally use existing **HTML/CSS** as our Ground Truth.
+
+1. **Preserving "Design Intent"**  
+   JSON is pure data; it completely strips away the author's graphical design intent—such as "what should be emphasized most" or "which information should be grouped together." If AI tries to reconstruct a UI from intent-less data, it is forced to guess (hallucinate), leading to distorted information.  
+   **HTML conveys the "structure of information," while CSS conveys the "author's visual intent."** By using them as-is, we minimize transmission errors, allowing the AI to accurately translate the data into tailored GUIs, text, or audio.
+
+2. **No Custom Browsers Needed (Full Ecosystem Compatibility)**  
+   We don't need to invent special protocols or custom browsers. SIXIMA's data foundation runs 100% natively, without any modifications, on standard browser engines currently used worldwide (Chromium, WebKit, Gecko). Developers are also freed from the burden of maintaining dual data schemas.
+
+3. **Accessibility as a Core Design Philosophy**  
+   Accessibility is not an optional patch applied at the end of development (like adding ARIA attributes). In SIXIMA, absolute constraints—such as a flat DOM without useless wrapper tags, and predictable keyboard navigation—are baked in from line one of the code.
+
+---
+
+## 04 / The Dual-Paradigm Architecture
+
+Based on these principles, we completely separate the "ground truth data (meaning and intent)" from the "dynamic projection onto the screen."
 
 ```mermaid
 flowchart LR
-    subgraph Conventional ["CONVENTIONAL MONOLITHIC MODEL"]
+    subgraph Conventional ["CONVENTIONAL MONOLITHIC MODEL (Forcing one screen)"]
         direction LR
-        D["Static Web GUI<br/>(One-Size-Fits-All Layout)"]
-        U1["User A<br/>(Standard Visual User)"]
-        U2["User B<br/>(Low Vision / Dyslexia)"]
-        U3["User C<br/>(Switch / Motor Assist)"]
-        UN["User N<br/>(Cognitive / Sensory Fatigue)"]
+        D["Static Web GUI<br/>(One-Size-Fits-All)"]
+        U1["User A<br/>(Standard Vision)"]
+        U2["User B<br/>(Low Vision)"]
+        U3["User C<br/>(Motor/Cognitive Limits)"]
 
-        D -->|Fixed Output| U1
+        D -->|Same Output| U1
         D -.->|Visual Friction| U2
-        D -.->|Input Barrier| U3
-        D -.->|Cognitive Overload| UN
+        D -.->|Input Barriers| U3
     end
 
-    subgraph Sixima ["SIXIMA DUAL-PARADIGM MODEL"]
+    subgraph Sixima ["SIXIMA DUAL-PARADIGM (AI Dynamic Adaptation)"]
         direction LR
-        B["Semantic HTML/CSS Base<br/>(Structured & Token-Dense)"]
-        AI["AI Dynamic Adapter<br/>(Context Engine)"]
-        SU1["User A<br/>[Tailored Graphical GUI]"]
-        SU2["User B<br/>[Phosphor Text / Linear CUI]"]
-        SU3["User C<br/>[Deterministic Key Flow]"]
-        SUN["User N<br/>[Voice / Braille Stream]"]
+        B["HTML/CSS Base<br/>(Structured Data w/ Intent)"]
+        AI["AI Dynamic Adapter<br/>(Context Translation)"]
+        SU1["User A<br/>[Tailored Rich GUI]"]
+        SU2["User B<br/>[High-Contrast Text UI]"]
+        SU3["User C<br/>[Voice/Braille Stream]"]
 
-        B -->|Zero Ambiguity| AI
-        AI -->|Rich Visuals| SU1
-        AI -->|Monospaced Density| SU2
-        AI -->|Deterministic Control| SU3
-        AI -->|Auditory / Tactile| SUN
+        B -->|Accurate Intent| AI
+        AI -->|Visual Projection| SU1
+        AI -->|Noise-free Text| SU2
+        AI -->|Audio/Tactile| SU3
     end
 
 ```
 
-1. **Semantic Ground Truth:** Applications are constructed with strictly structured, token-dense HTML/CSS without bloated decorative wrappers.
-2. **AI Dynamic Adaptation:** Machine agents ingest this deterministic tree without hallucination and project the ideal modality tailored to the specific user's physical, sensory, or operational environment.
-
 ---
 
-## 03 / Core Architectural Directives
+## 05 / Development Roadmap & Current Status
 
-### Universal Multi-Sensory Inclusion (Built-in by Design)
-
-* **Visual Inclusivity:** High-contrast phosphor luminescence, 1px coordinate boundaries, and monospaced typography guarantee immediate legibility while preventing ocular fatigue.
-* **Non-Visual & Tactile Parity:** Flat DOM trees traversed effortlessly by screen readers and refreshable Braille displays with 0% structural debris.
-* **Cognitive Velocity:** Strict predictability, zero unexpected layout shifts, and no intrusive decorative noise to minimize mental fatigue.
-
-### Agentic Token Optimization
-
-* **Context-Window Efficiency:** Eliminating arbitrary wrapper nests reduces DOM token consumption by up to 70% during autonomous agent parsing.
-* **Deterministic Execution:** Clear semantic tags ensure synthetic agents can locate, interact with, and verify UI elements reliably.
-
-### Applied UX Beyond Pure UI
-
-* Ergonomics encompass the entire interactive envelope: sub-millisecond input responsiveness, battery conservation, and human processing speed.
-* Demonstrated through production clients such as **`JAIBUS-app`** (a high-density transit scheduling tool).
-
----
-
-## 04 / Philosophical Discourse & Inquiries
-
-### Q1: Are you trying to eliminate graphical UIs and replace the web with terminal text?
-
-**Position:** Absolutely not. Graphical user interfaces are invaluable for spatial reasoning, visual design, and rapid scanning. However, forcing *only* a graphical interface upon everyone excludes those who process information differently. We use a deterministic, text-first reference implementation because text is the highest-density, most unambiguous bridge between human and machine comprehension—from which any tailored GUI or audio stream can be accurately derived.
-
-### Q2: Why rely on standard HTML/CSS instead of custom JSON protocols?
-
-**Position:** HTML/CSS is already a resilient, battle-tested standard with mature semantic hierarchies (`<main>`, `<nav>`, `<article>`, `<table>`, `<button>`). Pure JSON models discard the creator's visual emphasis and design hierarchy, forcing AI models to hallucinate layout priority. Furthermore, using standard HTML/CSS preserves native browser accessibility APIs and eliminates the burden of maintaining duplicate API schemas.
-
-### Q3: How does this run on existing browsers today?
-
-**Position:** SIXIMA requires zero proprietary browser forks. By adhering strictly to core Web Standards, CSS Custom Properties, and clean semantic elements, SIXIMA applications render with near-zero runtime overhead directly in modern browsers while maintaining native keyboard and screen reader hooks.
-
----
-
-## 05 / Strategic Roadmap
-
-SIXIMA progresses across four disciplined development phases. We are currently operating in **Phase 0**.
+SIXIMA will evolve through four phases. We are currently executing the first step, **Phase 0**.
 
 ```mermaid
 flowchart LR
-    P0["PHASE 0<br/>[CURRENT STATUS]<br/>HTML/CSS Baseline & React Template"] 
-    --> P1["PHASE 1<br/>Applied Field UX<br/>(Production Prototypes)"]
-    --> P2["PHASE 2<br/>AI Dynamic Adapter<br/>(Multi-Modal Synthesis Layer)"] 
-    --> P3["PHASE 3<br/>Dedicated Engine<br/>(Native Browser Runtime)"]
+    P0["PHASE 0<br/>[CURRENT]<br/>HTML/CSS Optimization<br/>& React Template"] 
+    --> P1["PHASE 1<br/>Applied Field UX<br/>(Real-world Prototypes)"]
+    --> P2["PHASE 2<br/>AI Translation Layer<br/>(Dynamic UI Generation)"] 
+    --> P3["PHASE 3<br/>Dedicated Engine<br/>(Native Runtime)"]
 
 ```
 
-### [PHASE 0: HTML/CSS FRAMEWORK OPTIMIZATION & REACT TEMPLATE] — CURRENT ACTIVE PHASE
+### [PHASE 0] HTML/CSS Optimization & React Template (Currently Active)
 
-* **Core Objective:** Radical optimization of HTML/CSS structural patterns, monotonic layouts, and token-dense DOM semantics on standard browser engines.
-* **Primary Milestone:** Build and release the standardized `sixima-ui` React starter template and component primitives.
-* **Reference Implementation:** The official SIXIMA web platform itself serves as the live, open-source demonstration and operational testbed of this UI/UX architecture.
+* **Objective:** Establish structural rules for HTML/CSS that AI agents will not misread, and which are simultaneously extremely low-noise for human users.
+* **Goal:** Create the `sixima-ui` React template applying these rules.
+* **Reference Implementation:** **The terminal-like SIXIMA official portal we have published is the live sample implementation of this "highest-density, zero-ambiguity base data."**
 
-### [PHASE 1: APPLIED FIELD UX & STRESS TESTING]
+### [PHASE 1] Applied Field UX Validation
 
-* **Core Objective:** Validate ergonomic interaction models across real-world, high-frequency utility scenarios under severe hardware, device, and network constraints.
-* **Primary Milestone:** Deploy operational domain applications (such as `JAIBUS-app`) to refine zero-latency key navigation, assistive device flow, and network-constrained performance.
+* **Objective:** Validate whether this architecture can support "rapid decision-making" in real-world environments with severe network or hardware constraints.
+* **Goal:** Test keyboard-only operations and assistive technology synchronization through the deployment of a public transit client (`JAIBUS-app`).
 
-### [PHASE 2: AI DYNAMIC ADAPTATION & TRANSLATION LAYER]
+### [PHASE 2] AI Translation & Dynamic Adaptation Layer
 
-* **Core Objective:** Design and deploy the multi-modal AI mediation pipeline.
-* **Primary Milestone:** Construct autonomous translation engines that ingest clean SIXIMA semantic markup and dynamically reconstruct customized, optimal UI/UX formats (rich GUI diagrams, high-contrast text views, speech streams, or simplified language) calibrated to individual needs without altering the base data layer.
+* **Objective:** Build the AI system that dynamically reconstructs the UI/UX by adapting to the specific challenges of each user.
+* **Goal:** Implement an adapter module that generates tailored outputs (Rich GUI, Text, Voice) from SIXIMA's base data without hallucination.
 
-### [PHASE 3: DEDICATED SIXIMA BROWSER RUNTIME ENGINE]
+### [PHASE 3] Dedicated Browser Engine
 
-* **Core Objective:** Break free from legacy browser rendering engines (Chromium/WebKit overhead).
-* **Primary Milestone:** Develop an independent, ultra-lightweight browser engine built natively for deterministic token serialization, zero layout thrashing, and instantaneous assistive-device synchronization.
+* **Objective:** Explore an ultra-lightweight execution environment beyond the heavy frameworks of existing browser engines (Chromium / WebKit).
+* **Goal:** Research and develop a standalone, SIXIMA-native browser engine dedicated to token serialization and assistive device synchronization.
 
 ---
 
-## 06 / Repository Ecosystem
+## 06 / Repository Ecosystem & Usage
 
 ```
 sixima/
 ├── packages/
-│   ├── sixima-core/          # Core specifications, token parsers & DOM contracts
+│   ├── sixima-core/          # Core specs, token parsers, DOM rules
 │   ├── sixima-ui/            # Zero-dependency React & CSS terminal primitives
-│   └── sixima-tokens/        # Monospace metrics & phosphor luminance palette
+│   └── sixima-tokens/        # Monospace metrics & phosphor palette definitions
 ├── apps/
-│   ├── official-portal/      # The SIXIMA live reference platform (Phase 0)
-│   └── jaibus-app/           # Applied high-density transit client (Phase 1)
-├── benchmarks/               # Token consumption & assistive test suites
-└── docs/                     # Specifications, whitepapers & accessibility audits
+│   ├── official-portal/      # SIXIMA Official Portal (Phase 0 implementation)
+│   └── jaibus-app/           # High-density transit client (Phase 1 testing)
+└── docs/                     # Specifications, whitepapers, audit logs
 
 ```
 
----
-
-## 07 / Getting Started
-
-### Prerequisites
-
-* Node.js `>= 18.0.0`
-* npm / pnpm / yarn
-
-### Installation & Local Setup
+### Getting Started
 
 ```bash
-# Clone the repository
+# 1. Clone the repository
 git clone [https://github.com/sixima/sixima.git](https://github.com/sixima/sixima.git)
 cd sixima
 
-# Install dependencies
+# 2. Install dependencies (Node.js 18+ recommended)
 npm install
 
-# Launch local development environment
+# 3. Start the development server
 npm run dev
 
 ```
 
 ---
 
-## 08 / Open Invitation & Contribution Protocols
+## 07 / Open Invitation & Contribution
 
-SIXIMA is an evolving research experiment. We actively invite software engineers, accessibility researchers, designers, and AI practitioners to collaborate:
+SIXIMA is currently in its Phase 0 experimental stage. We actively welcome feedback and contributions from software engineers, designers, accessibility researchers, and AI developers.
 
-* **Accessibility Auditing:** Benchmark components with screen readers, switch inputs, eye-tracking hardware, and refreshable Braille displays.
-* **Component Engineering:** Expand `sixima-ui` primitives, optimize CSS rendering, and build real-world client applications.
-* **Agent Benchmarking:** Measure token efficiency, execution accuracy, and parsing throughput with LLM agent pipelines.
-
-### Contribution Flow
-
-1. Fork the repository.
-2. Create your feature branch (`git checkout -b feature/semantic-matrix`).
-3. Commit your changes (`git commit -m 'feat: implement semantic matrix layout'`).
-4. Push to the branch (`git push origin feature/semantic-matrix`).
-5. Open a Pull Request.
+* **GitHub Issues:** [github.com/sixima-electirc/sixima/issues](https://www.google.com/search?q=https://github.com/sixima/sixima/issues)
+* **Email:** [sixima@proton.me](https://www.google.com/search?q=mailto%3Asixima%40proton.me)
+* **Origin:** Japan Advanced Institute of Science and Technology (JAIST), Ishikawa, Japan
 
 ---
 
-## 09 / Communication & Endpoints
+## 08 / License
 
-* **GitHub Issues:** [github.com/sixima/sixima/issues](https://www.google.com/search?q=https://github.com/sixima/sixima/issues)
-* **Direct Transmission:** [sixima@proton.me](https://www.google.com/search?q=mailto%3Asixima%40proton.me)
-* **Research Station:** Japan Advanced Institute of Science and Technology (JAIST), Ishikawa, Japan
-
----
-
-## 10 / License
-
-Distributed under the MIT License. See [`LICENSE`](https://www.google.com/search?q=LICENSE) for complete details.
-
+This project is licensed under the [MIT License](https://www.google.com/search?q=LICENSE).
