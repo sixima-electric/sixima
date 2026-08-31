@@ -1,6 +1,6 @@
 # SIXIMA
 
-> **デュアルパラダイム・インターフェース・アーキテクチャ： ユニバーサルなアクセシビリティ × 自律型AIとの同期**
+> **誰一人取り残さない世界を実現するデザインアーキテクチャ**
 
 [![Status: Phase 0 Active](https://img.shields.io/badge/status-phase_0_active-00ff66?style=flat-square&logo=github)](https://github.com/sixima/sixima)
 [![Origin: JAIST](https://img.shields.io/badge/origin-JAIST-black?style=flat-square)](https://www.jaist.ac.jp/)
