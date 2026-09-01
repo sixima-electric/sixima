@@ -1,5 +1,5 @@
 # SIXIMA
-［project website is here］(https://sixima-electric.github.io/sixima/) 
+［project website is here](https://sixima-electric.github.io/sixima/) 
 > **Dual-Paradigm Interface Architecture: Universal Accessibility × Autonomous AI Synchronization.**
 > 
 > *🌐 [日本語のREADME (README-jp.md) はこちら](README-jp.md)*
